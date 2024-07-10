@@ -21,7 +21,7 @@ spaces.forEach((space)=>{
         let nums = space.id.split("_").map(Number)
         console.log(nums[0], nums[1])
         if(turn){
-            if(matriz[nums[0]][nums[1]] !== 0 || matriz[nums[0]][nums[1]] !== 1){
+            if(matriz[nums[0]][nums[1]] !== 0 && matriz[nums[0]][nums[1]] !== 1){
                 matriz[nums[0]][nums[1]] = 0
                 o.style.display = "block"
                 win()
@@ -29,7 +29,7 @@ spaces.forEach((space)=>{
                 cont ++
             }
         }else{
-            if(matriz[nums[0]][nums[1]] !== 0 || matriz[nums[0]][nums[1]] !== 1){
+            if(matriz[nums[0]][nums[1]] !== 0 && matriz[nums[0]][nums[1]] !== 1){
                 matriz[nums[0]][nums[1]] = 1
                 x.style.display = "block"
                 turn = true
