@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Jogo_da_velha_-_tic_tac_toe.png/1200px-Jogo_da_velha_-_tic_tac_toe.png" type="image/x-icon">
+</head>
+<body>
+    <div class="win">
+    <h1></h1>
+    <img src="https://usagif.com/wp-content/uploads/gif/confetti-40.gif">
+    <input class="btn" type="button" value="Jogar Novamente">
+    </div>
+    <div class="gameOver">
+        <h1>  👵VELHAA!!👵 </h1>
+        <h1>(JOGO EMPATADO)</h1>
+        <input class="btn" type="button" value="Jogar Novamente">
+    </div>
+    <div>
+        <div id="0_0" class="space last"><span class="x">X</span><span class="o">O</span></div>
+        <div id="1_0" class="space last"><span class="x">X</span><span class="o">O</span></div>
+        <div id="2_0" class="space last bottom"><span class="x">X</span><span class="o">O</span></div>
+    </div>
+    <div>
+        <div id="0_1" class="space last"><span class="x">X</span><span class="o">O</span></div>
+        <div id="1_1" class="space last"><span class="x">X</span><span class="o">O</span></div>
+        <div id="2_1" class="space last bottom"><span class="x">X</span><span class="o">O</span></div>
+    </div>
+    <div>
+        <div id="0_2" class="space lastR"><span class="x">X</span><span class="o">O</span></div>
+        <div id="1_2" class="space lastR"><span class="x">X</span><span class="o">O</span></div>
+        <div id="2_2" class="space lastR bottom"><span class="x">X</span><span class="o">O</span></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
